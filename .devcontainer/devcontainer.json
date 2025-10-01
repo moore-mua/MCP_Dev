@@ -1,0 +1,21 @@
+{
+    "name": "codex-mcp-env",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "openai.chatgpt",
+                "tamasfe.even-better-toml",
+                "Pimzino.spec-workflow-mcp"
+            ],
+            "settings": {
+
+            }
+        }
+    },
+    "portsAttributes": {
+        "*": { "onAutoForward": "openBrowser" }   // 見つかったら自動でブラウザを開く
+    }
+}

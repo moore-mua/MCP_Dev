@@ -1,0 +1,19 @@
+network_access = true
+
+model = "gpt-5-codex"
+
+[tools]
+web_search = true
+
+[mcp_servers.spec-workflow]
+"command"="/usr/bin/npx"
+"args"=["-y", "@pimzino/spec-workflow-mcp@latest","/workspace","--AutoStartDashboard"]
+startup_timeout_ms = 30000
+
+[mcp_servers.context7]
+command = "/usr/bin/npx"
+args = ["-y", "--node-options=--experimental-fetch","@upstash/context7-mcp@latest","--api-key","YOUR_APIKEY"]
+
+[mcp_servers.serena]
+"command"="uvx"
+"args"=["--from", "git+https://github.com/oraios/serena","serena","start-mcp-server"]
