@@ -1,0 +1,21 @@
+{
+  "id": "approval_1759390010356_guohgnoqe",
+  "title": "Product steering document",
+  "filePath": ".spec-workflow/steering/product.md",
+  "type": "document",
+  "status": "needs-revision",
+  "createdAt": "2025-10-02T07:26:50.356Z",
+  "category": "steering",
+  "categoryName": "counter-cli",
+  "response": "Feedback Summary (1 comments):\n\nGeneral Comments:\n1. ドキュメントの内容を日本語に修正してください。\n\n",
+  "annotations": "{\n  \"decision\": \"needs-revision\",\n  \"comments\": [\n    {\n      \"type\": \"general\",\n      \"comment\": \"ドキュメントの内容を日本語に修正してください。\",\n      \"timestamp\": \"2025-10-02T07:40:57.656Z\",\n      \"id\": \"comment_1759390857656_daebxbyq0\"\n    }\n  ],\n  \"summary\": \"Feedback Summary (1 comments):\\n\\nGeneral Comments:\\n1. ドキュメントの内容を日本語に修正してください。\\n\\n\",\n  \"timestamp\": \"2025-10-02T07:41:29.215Z\"\n}",
+  "respondedAt": "2025-10-02T07:41:29.343Z",
+  "comments": [
+    {
+      "type": "general",
+      "comment": "ドキュメントの内容を日本語に修正してください。",
+      "timestamp": "2025-10-02T07:40:57.656Z",
+      "id": "comment_1759390857656_daebxbyq0"
+    }
+  ]
+}

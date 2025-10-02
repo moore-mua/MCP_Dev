@@ -1,0 +1,16 @@
+{
+  "id": "snapshot_1759392268458_rta3iao0d",
+  "approvalId": "approval_1759392234494_s71ddemi4",
+  "approvalTitle": "heartbeat-counter tasks",
+  "version": 2,
+  "timestamp": "2025-10-02T08:04:28.458Z",
+  "trigger": "approved",
+  "status": "pending",
+  "content": "# Tasks Document\n\n- [ ] 1. scaffold-main-script\n  - File: src/main.py\n  - Create Python entrypoint with `run()` function, guard `if __name__ == \"__main__\"` を追加。\n  - 目的: CLI 実行の基盤を整備する。\n  - _Leverage: README (作成予定) の実行手順を参照予定_\n  - _Requirements: Requirement 1_\n  - _Prompt: Implement the task for spec heartbeat-counter, first run spec-workflow-guide to get the workflow guide then implement the task: Role: Python CLI Developer | Task: Create the initial `src/main.py` with `run()` entrypoint, guard節、定数 `MAX_COUNT = 100` の定義を行い、今後のロジック追加に備える | Restrictions: 外部依存を追加しない、PEP 8 に従う | _Leverage: Python 標準ライブラリのみ | _Requirements: Requirement 1 | Success: `python src/main.py` で実行可能なエントリポイントが生成され、まだループは実装していないがスクリプトが終了時に\"Heartbeat counter placeholder\" を出力する。\n\n- [ ] 2. implement-heartbeat-loop\n  - File: src/main.py\n  - `heartbeat_loop` 関数を実装し、1 秒周期でカウンターと ISO 8601 タイムスタンプを出力。\n  - 目的: 基本的なカウンター更新ロジックを提供する。\n  - _Leverage: Python `time`, `datetime` モジュール_\n  - _Requirements: Requirement 1, Requirement 2_\n  - _Prompt: Implement the task for spec heartbeat-counter, first run spec-workflow-guide to get the workflow guide then implement the task: Role: Python Timing Specialist | Task: 実行中ループを実装し、カウンターと ISO 8601 時刻を `[{timestamp}] count={value}` 形式で出力。カウンターは 0〜100 を循環させる。 | Restrictions: 1 秒周期を維持し、`time.sleep` と標準出力のフラッシュを必ず行う | _Leverage: time, datetime | _Requirements: Requirement 1, Requirement 2 | Success: 実行中に各行が 1 秒間隔で表示され、100 の後に 0 に戻る。\n\n- [ ] 3. handle-signals-and-errors\n  - File: src/main.py\n  - `KeyboardInterrupt` 捕捉と終了メッセージ、想定外例外のエラーハンドリングを追加。\n  - 目的: ユーザー操作や I/O 異常時でも情報を残して終了させる。\n  - _Leverage: Python `sys` モジュール_\n  - _Requirements: Requirement 3_\n  - _Prompt: Implement the task for spec heartbeat-counter, first run spec-workflow-guide to get the workflow guide then implement the task: Role: Python Reliability Engineer | Task: `KeyboardInterrupt` を捕捉し終了メッセージを標準出力へ表示、その他例外を標準エラーへ書き込み終了コード 1 で終了させる | Restrictions: 余計なログを追加しない、終了前に出力をフラッシュ | _Leverage: sys.stdout, sys.stderr | _Requirements: Requirement 3 | Success: Ctrl+C で「Interrupted by user」が表示され正常終了し、その他例外は標準エラーに内容が表示される。\n\n- [ ] 4. document-usage\n  - File: README.md\n  - スクリプトの実行・停止方法と循環カウンター仕様を記載。\n  - 目的: ユーザーが手順と挙動を理解できるようにする。\n  - _Leverage: Steering docs product.md, tech.md_\n  - _Requirements: Requirement 1, Requirement 2, Requirement 3_\n  - _Prompt: Implement the task for spec heartbeat-counter, first run spec-workflow-guide to get the workflow guide then implement the task: Role: Technical Writer | Task: README.md を作成し、実行方法(`python src/main.py`)、出力フォーマット、Ctrl+C での終了方法、依存ライブラリの有無を説明する | Restrictions: 日本語で記述、過度な説明を避ける | _Leverage: product.md, tech.md | _Requirements: Requirement 1, Requirement 2, Requirement 3 | Success: README を参照するだけで利用手順が理解でき、実際の動作と整合する。\n",
+  "fileStats": {
+    "size": 3900,
+    "lines": 34,
+    "lastModified": "2025-10-02T08:03:51.051Z"
+  },
+  "comments": []
+}

@@ -1,0 +1,22 @@
+{
+  "filePath": ".spec-workflow/specs/heartbeat-counter/design.md",
+  "currentVersion": 2,
+  "snapshots": [
+    {
+      "version": 1,
+      "filename": "snapshot-001.json",
+      "timestamp": "2025-10-02T08:01:10.353Z",
+      "trigger": "initial",
+      "approvalId": "approval_1759392070339_u5i1zgc1q",
+      "approvalTitle": "heartbeat-counter design"
+    },
+    {
+      "version": 2,
+      "filename": "snapshot-002.json",
+      "timestamp": "2025-10-02T08:01:41.433Z",
+      "trigger": "approved",
+      "approvalId": "approval_1759392070339_u5i1zgc1q",
+      "approvalTitle": "heartbeat-counter design"
+    }
+  ]
+}

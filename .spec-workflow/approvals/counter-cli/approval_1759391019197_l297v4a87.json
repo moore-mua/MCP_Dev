@@ -1,0 +1,27 @@
+{
+  "id": "approval_1759391019197_l297v4a87",
+  "title": "Product steering document (rev2)",
+  "filePath": ".spec-workflow/steering/product.md",
+  "type": "document",
+  "status": "needs-revision",
+  "createdAt": "2025-10-02T07:43:39.197Z",
+  "category": "steering",
+  "categoryName": "counter-cli",
+  "response": "Feedback Summary (1 comments):\n\nSpecific Text Comments:\n1. \"## 主要機能\n1. **1 秒間隔のカウンター**: 毎秒カウンターをインクリメントし、一定リズム...\": カウントの上限を100に設定し、その後0から再度カウントアップを行うように修正してください。\n",
+  "annotations": "{\n  \"decision\": \"needs-revision\",\n  \"comments\": [\n    {\n      \"type\": \"selection\",\n      \"comment\": \"カウントの上限を100に設定し、その後0から再度カウントアップを行うように修正してください。\",\n      \"timestamp\": \"2025-10-02T07:47:26.854Z\",\n      \"selectedText\": \"## 主要機能\\n1. **1 秒間隔のカウンター**: 毎秒カウンターをインクリメントし、一定リズムのハートビートを示す。\\n2. **タイムスタンプ付き出力**: 各行に現在時刻を付与し、システムクロックとの整合性を確認できるようにする。\\n3. **最小構成**: 標準ライブラリのみを利用した単一ファイルの Python スクリプトとして提供し、あらゆる環境で導入しやすくする。\",\n      \"highlightColor\": {\n        \"bg\": \"rgba(255, 235, 59, 0.3)\",\n        \"border\": \"#FFEB3B\",\n        \"name\": \"#ffeb3b\"\n      },\n      \"id\": \"comment_1759391246854_jrazeobs1\"\n    }\n  ],\n  \"summary\": \"Feedback Summary (1 comments):\\n\\nSpecific Text Comments:\\n1. \\\"## 主要機能\\n1. **1 秒間隔のカウンター**: 毎秒カウンターをインクリメントし、一定リズム...\\\": カウントの上限を100に設定し、その後0から再度カウントアップを行うように修正してください。\\n\",\n  \"timestamp\": \"2025-10-02T07:49:45.025Z\"\n}",
+  "respondedAt": "2025-10-02T07:49:45.164Z",
+  "comments": [
+    {
+      "type": "selection",
+      "comment": "カウントの上限を100に設定し、その後0から再度カウントアップを行うように修正してください。",
+      "timestamp": "2025-10-02T07:47:26.854Z",
+      "selectedText": "## 主要機能\n1. **1 秒間隔のカウンター**: 毎秒カウンターをインクリメントし、一定リズムのハートビートを示す。\n2. **タイムスタンプ付き出力**: 各行に現在時刻を付与し、システムクロックとの整合性を確認できるようにする。\n3. **最小構成**: 標準ライブラリのみを利用した単一ファイルの Python スクリプトとして提供し、あらゆる環境で導入しやすくする。",
+      "highlightColor": {
+        "bg": "rgba(255, 235, 59, 0.3)",
+        "border": "#FFEB3B",
+        "name": "#ffeb3b"
+      },
+      "id": "comment_1759391246854_jrazeobs1"
+    }
+  ]
+}

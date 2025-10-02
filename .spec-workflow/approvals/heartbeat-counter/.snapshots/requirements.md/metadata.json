@@ -1,0 +1,22 @@
+{
+  "filePath": ".spec-workflow/specs/heartbeat-counter/requirements.md",
+  "currentVersion": 2,
+  "snapshots": [
+    {
+      "version": 1,
+      "filename": "snapshot-001.json",
+      "timestamp": "2025-10-02T07:57:00.330Z",
+      "trigger": "initial",
+      "approvalId": "approval_1759391820320_oajotyg4r",
+      "approvalTitle": "heartbeat-counter requirements"
+    },
+    {
+      "version": 2,
+      "filename": "snapshot-002.json",
+      "timestamp": "2025-10-02T07:59:59.513Z",
+      "trigger": "approved",
+      "approvalId": "approval_1759391820320_oajotyg4r",
+      "approvalTitle": "heartbeat-counter requirements"
+    }
+  ]
+}
